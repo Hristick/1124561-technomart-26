@@ -1,0 +1,23 @@
+/*
+.logo {
+  background-color: #ff3333;
+  position: absolute;
+  left: 133px;
+  top: -4px;
+  width: 220px;
+  height: 51px;
+  z-index: 198;
+}
+
+h1 {
+    
+    font-size: 16px;
+    font-family: "Cuprum";
+    color: rgb(238, 54, 67);
+    font-style: italic;
+}
+
+
+footer {
+    background-image: url(img\layer-footer.png);
+}
