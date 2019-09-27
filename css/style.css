@@ -20,8 +20,14 @@ h1 {
   z-index: 189;
 
 }
-
-
+/* Спрятал кнопки*/
+.hidden-batton {
+  display: none;
+}
+/*Картинке дал класс item и хочу при наведении видеть кнопки*/
+.item :hover  {
+display: block;
+}
 
 .new {
   float:  right;
