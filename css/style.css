@@ -1,12 +1,7 @@
-/*
+
 .logo {
   background-color: #ff3333;
-  position: absolute;
-  left: 133px;
-  top: -4px;
-  width: 220px;
-  height: 51px;
-  z-index: 198;
+
 }
 
 h1 {
@@ -17,7 +12,29 @@ h1 {
     font-style: italic;
 }
 
+.materials {
+  background-color: #ffbf47;
+  position: absolute;
+  width: 300px;
+  height: 123px;
+  z-index: 189;
+
+}
+
+
+
+.new {
+  float:  right;
+}
+
+.paint {
+  margin: -20px 2px 0px 110px;
+}
 
 footer {
-    background-image: url(img\layer-footer.png);
+    background-color: #32425c;
+}
+
+.underfooter {
+  background-color: #293449;
 }
