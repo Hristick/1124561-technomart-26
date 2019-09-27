@@ -12,7 +12,7 @@
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
           
-            <form>
+            <form action="https://echo.htmlacademy.ru" method="get" >
               <input type="text" placeholder="Поиск">
             </form>
             
@@ -99,13 +99,15 @@
         <ul>
          <li>
           <h3>Перфоратор BOSH BFG 9000</h3>
-          <img src="img/bfg9000.png" alt="Перфоратор BOSH BFG 9000">
+          <img class="item" src="img/bfg9000.png" alt="Перфоратор BOSH BFG 9000">
           <p>
           <del>32500Р.</del>
            <ins>25500Р.</ins>
            </p>
-           <a href="">Купить</a>
-          <a href="">В закладки</a>
+           <div class="hidden-batton">
+            <a href="">Купить</a>
+            <a href="">В закладки</a>
+           </div>
          </li>
          <li>
           <h2>Перфоратор BOSH BFG 3000</h2>
@@ -222,9 +224,37 @@
     <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
     <a href=""><img src="img/map.png" width="300" height="158" alt=" г. Санкт-Петербург ул. Б. Конюшенная, д. 19.8"></a>
     <button type="button" name="button">ЗАБЛУДИЛИСЬ, НАПИШИТЕ НАМ!</button>
-  </section>
+  
+   /*Форма большой карты*/
+   
+   <div>
+     <img src="img/big-map.jpg" width="970" height="476" alt=" г. Санкт-Петербург ул. Б. Конюшенная, д. 19.8">
+     <batton type="batton">Закрыть</batton>
+   </div>
 
-  </main>
+  
+  /*Форма Напишите нам*/
+  <div class="visually-hiden"> 
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        
+        <batton type="batton" aria-label="Закрыть окно"></batton>
+        
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Имя Фамилия">
+
+        <label for="e-mail">Ваш e-mail:</label>
+        <input type="text" id="e-mail" placeholder="email@exemple.com">
+
+        <label for="text">Ваше имя:</label>
+        <input type="textarea" id="text" placeholder="В свободной форме">
+
+        <batton type="submit">Отправить</batton>
+
+      </form>
+  </div>
+
+  </section>
+</main>
   <footer>
      <div>
        <a class="logo" href="index.html">
