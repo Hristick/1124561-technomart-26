@@ -21,11 +21,11 @@ h1 {
 
 }
 /* Спрятал кнопки*/
-.hidden-batton {
+.hidden-button {
   display: none;
 }
 /*Картинке дал класс item и хочу при наведении видеть кнопки*/
-.item :hover  {
+.item:hover  {
 display: block;
 }
 
