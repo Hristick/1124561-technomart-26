@@ -12,8 +12,8 @@
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
           
-            <form>
-              <input type="text" placeholder="Поиск">
+            <form action="https://echo.htmlacademy.ru" method="get" >
+              <input type="search" placeholder="Поиск">
             </form>
             
             <a href="">Закладки:</a>
@@ -99,13 +99,15 @@
         <ul>
          <li>
           <h3>Перфоратор BOSH BFG 9000</h3>
-          <img src="img/bfg9000.png" alt="Перфоратор BOSH BFG 9000">
+          <img class="item" src="img/bfg9000.png" alt="Перфоратор BOSH BFG 9000">
           <p>
           <del>32500Р.</del>
            <ins>25500Р.</ins>
            </p>
-           <a href="">Купить</a>
-          <a href="">В закладки</a>
+           <div class="hidden-batton">
+            <a href="">Купить</a>
+            <a href="">В закладки</a>
+           </div>
          </li>
          <li>
           <h2>Перфоратор BOSH BFG 3000</h2>
@@ -169,7 +171,7 @@
          Ведь мы неплохо заработаем,
          поднимая его на ваш этаж!
       </p>
-      <img src="img/delivery-logo.png" width="20" height="20" alt="Машина доставки">
+      <img src="img/delivery-car.png" width="468" height="261" alt="Машина доставки">
      </div>
 
      <div>
@@ -181,7 +183,7 @@
            сгоревший товар на новый.
            Дом уж восстановите как-нибудь сами.
         </p>
-        <img src="img/guarantee-logo.png" width="20" height="20" alt="100% гарантия">
+        <img src="img/guarantee.png" width="389" height="283" alt="100% гарантия">
         </div>
 
         <div>
@@ -190,7 +192,7 @@
              Кредитные консультанты придут вам на помощь.
           </p>
           <a href="#">Отправить заявку</a>
-          <img src="img/credit-logo.png" width="20" height="20" alt="Кредит">
+          <img src="img/credit.png" width="465" height="285" alt="Кредит">
         </div>
 
         <div>
@@ -222,9 +224,38 @@
     <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
     <a href=""><img src="img/map.png" width="300" height="158" alt=" г. Санкт-Петербург ул. Б. Конюшенная, д. 19.8"></a>
     <button type="button" name="button">ЗАБЛУДИЛИСЬ, НАПИШИТЕ НАМ!</button>
+  
+   /*Форма большой карты*/
+   
+   <div>
+     <img src="img/big-map.jpg" width="970" height="476" alt=" г. Санкт-Петербург ул. Б. Конюшенная, д. 19.8">
+     <button type="button">Закрыть</button>
+   </div>
+
+  
+  <!--Форма Напишите нам-->
+  <section class="popup"> 
+    <h3 class="visualy-hidden">Напишите нам!</h3>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        
+        <button type="button" aria-label="Закрыть окно"></button>
+        
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Имя Фамилия">
+
+        <label for="e-mail">Ваш e-mail:</label>
+        <input type="text" id="e-mail" placeholder="email@exemple.com">
+
+        <label for="text">Текст письма</label>
+        <textarea id="text" placeholder="В свободной форме"></textarea>
+
+        <button type="submit">Отправить</button>
+
+      </form>
   </section>
 
-  </main>
+  </section>
+</main>
   <footer>
      <div>
        <a class="logo" href="index.html">
@@ -238,7 +269,7 @@
      <ul>
        <li> <a href="">Компания</a></li>
        <li> <a href="">Новости</a></li>
-       <li> <a href="cataloge.html">Каталог  </a></li>
+       <li> <a href="catalog.html">Каталог  </a></li>
        <li> <a href="">Доставка</a></li>
        <li> <a href="">Контакты</a></li>
      </ul>
