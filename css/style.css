@@ -1,23 +1,123 @@
 
-.logo {
-  background-color: #ff3333;
+
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+  height: 42px;
+  background-color: #293449;
+
+}
+.header-top a {
+  color: white;
+}
+
 
 }
 
+.logo {
+  width: 220px;
+  height: 51px;
+  background-color: #ff3333;
+}
+ .logo:hover {
+   background-color: #ca2c37; 
+}
+
+.logo:active {
+   background-color: #ba2732;
+}
+
+.top-midel {
+  display: flex;
+  justify-content: baseline;
+}
 h1 {
-    
-    font-size: 16px;
-    font-family: "Cuprum";
-    color: rgb(238, 54, 67);
-    font-style: italic;
+   
+  font-size: 16px;
+  font-family: "Cuprum";
+  color: rgb(238, 54, 67);
+  font-style: italic;
+  line-height: 1.438;
+  
+
+}
+
+.nav1 {
+  align: center;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  background-color: #32425c;
+  list-style-type: none;
+  width: 940px;
+  height: 64px;
+}
+ .header-nav a {
+   color: white;
+}
+
+.header-nav li:hover {
+  background-color: #293449;
+}
+
+.header-nav li:active {
+  background-color: #1d2739;
 }
 
 .materials {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
   background-color: #ffbf47;
   position: absolute;
   width: 300px;
   height: 123px;
   z-index: 189;
+
+}
+
+.goods {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.goods li {
+  list-style-type: none;
+}
+
+.brand-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+
+  
+
+
+
+}
+ .brand:hover {
+  box-shadow: #293449;
+}
+
+}
+
+
+}
+
+
 
 }
 /* Спрятал кнопки*/
@@ -29,6 +129,8 @@ h1 {
 display: block;
 }
 
+.popup {
+  display: none;
 
 }
 
