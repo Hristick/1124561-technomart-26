@@ -87,9 +87,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  
- 
-
+}
+.materials li {
+  display: flex;
+  width: 300px;
+  height: 123px;
+  border: 2px black;
 }
 
 .goods {
