@@ -1,5 +1,11 @@
 
 
+body {
+  font-family: "cuprum";
+  font-size:  16px;
+
+}
+
 
 .header-top {
   display: flex;
@@ -14,6 +20,16 @@
   color: white;
 }
 
+h1 {
+  font-size: 16px;
+  font-family: "Cuprum";
+  color: rgb(238, 54, 67);
+  font-style: italic;
+ 
+
+}
+
+}
 
 }
 
@@ -34,31 +50,26 @@
   display: flex;
   justify-content: baseline;
 }
-h1 {
-   
-  font-size: 16px;
-  font-family: "Cuprum";
-  color: rgb(238, 54, 67);
-  font-style: italic;
-  line-height: 1.438;
-  
 
-}
-
-.nav1 {
-  align: center;
-}
 
 .header-nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   font-family: 'Cuprum';
   font-size: 17px;
   background-color: #32425c;
   list-style-type: none;
   width: 940px;
-  height: 64px;
+  /**padding-top: 20px;
+  padding-bottom: 20px;**/
+  margin:0 auto; 
+
+}
+
+ .header-nav li {
+  align-items: stretch;
+  height:60px;
+ 
 }
  .header-nav a {
    color: white;
@@ -76,28 +87,38 @@ h1 {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  background-color: #ffbf47;
-  position: absolute;
-  width: 300px;
-  height: 123px;
-  z-index: 189;
+  
+ 
 
 }
 
 .goods {
   display: flex;
+  width: 945px;
+  margin: 0 auto;
   justify-content: space-between;
+}
+ .goods div {
+   display: flex;
+   flex-wrap: wrap;
+ 
+
   
 }
 
-.goods li {
+.goods ul {
+  display: flex;
   list-style-type: none;
+
+  width: 220px;
+
 }
 
 .brand-list {
 
   display: flex;
   flex-wrap: wrap;
+  width: 960px;
   list-style-type: none;
   justify-content: space-between;
 }
@@ -126,7 +147,7 @@ h1 {
 }
 /*Картинке дал класс item и хочу при наведении видеть кнопки*/
 .item:hover  {
-display: block;
+display:block;
 }
 
 .popup {
@@ -134,9 +155,7 @@ display: block;
 
 }
 
-.new {
-  float:  right;
-}
+
 
 .paint {
   margin: -20px 2px 0px 110px;
