@@ -16,6 +16,12 @@ body {
   background-color: #293449;
 
 }
+
+.search::before {
+content: icon;
+background-image: url(icon-search.svg) no-repeat 50% 50%;
+
+}
 .header-top a {
   color: white;
 }
