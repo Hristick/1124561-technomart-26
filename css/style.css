@@ -13,7 +13,9 @@ body {
   font-size:  16px;
 
 }
-
+a {
+  text-decoration: none;
+}
 
 .header-top {
   display: flex;
@@ -45,9 +47,9 @@ h1 {
 
 }
 
-}
 
-}
+
+
 
 .logo {
   display:flex;
@@ -56,6 +58,7 @@ h1 {
   box-shadow: 0px 5px 0 0 #b52933;
   background-color: #ff3333;
   margin-left: 130px;
+  justify-content: center;
 }
  .logo:hover {
    background-color: #ca2c37; 
@@ -128,6 +131,8 @@ h1 {
 
 .materials {
   display: flex;
+  width: 960px;
+  height: 410px;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -137,18 +142,45 @@ h1 {
   height: 123px;
   border: 2px black;
 }
+
+.slider {
+  display: flex;
+  width: 620px;
+  height: 265px;
+  float: left;
+}
+
+
 /*-- Блок популярные товары -*/
 .goods {
   display: flex;
-  flex-wrap: wrap;
   width: 945px;
  
 }
 
 .all-goods {
-  display: inline-block;
-  align-content;: baseline;
-  justify-content: space-around;
+  display:flex;
+  align-content:center;
+  justify-content:space-around;
+  text-transform:uppercase;
+  
+}
+.all-goods h2 {
+  display: flex;
+  color: #32425c;
+
+}
+
+.all-goods a {
+  display: flex;
+  width: 253px;
+  height: 38px;
+  justify-content: center;
+  align-items:center;
+  background-color: #ee3643;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
  .goods-items {
    display: flex;
