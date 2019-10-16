@@ -137,28 +137,43 @@ h1 {
   height: 123px;
   border: 2px black;
 }
-
+/!-- Блок популярные товары --/
 .goods {
   display: flex;
+  flex-wrap: wrap;
   width: 945px;
-  margin: 0 auto;
-  justify-content: space-between;
+ 
 }
- .goods div {
+
+.all-goods {
+  display: flex;
+  align-content;: baseline;
+  justify-content: space-around;
+}
+ .goods-items {
    display: flex;
    flex-wrap: wrap;
- 
-
+   justify-content: space-between;
   
 }
 
 .goods ul {
   display: flex;
   list-style-type: none;
-
+  justify-content: space-between;
   width: 220px;
-
+ 
 }
+.goods ul img {
+  display: flex;
+  align-self: flex-start;
+}
+
+
+
+
+
+
 
 .brand-list {
 
@@ -187,10 +202,11 @@ h1 {
 
 
 }
-/* Спрятал кнопки*/
+
 .hidden-button {
-  display: none;
+  visibility: hidden;
 }
+
 /*Картинке дал класс item и хочу при наведении видеть кнопки*/
 .item:hover  {
 display:block;
