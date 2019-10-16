@@ -137,7 +137,7 @@ h1 {
   height: 123px;
   border: 2px black;
 }
-/!-- Блок популярные товары --/
+/*-- Блок популярные товары -*/
 .goods {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +146,7 @@ h1 {
 }
 
 .all-goods {
-  display: flex;
+  display: inline-block;
   align-content;: baseline;
   justify-content: space-around;
 }
@@ -171,15 +171,23 @@ h1 {
 
 
 
+.manufacturers {
+  display: flex;
+  width: 960px;
+  justify-content: center;
+}
 
-
+.all-brends {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
 
 
 .brand-list {
 
   display: flex;
   flex-wrap: wrap;
-  width: 960px;
   list-style-type: none;
   justify-content: space-between;
 }
@@ -194,17 +202,11 @@ h1 {
   box-shadow: #293449;
 }
 
-}
 
 
-}
-
-
-
-}
 
 .hidden-button {
-  visibility: hidden;
+  visibility:hidden;
 }
 
 /*Картинке дал класс item и хочу при наведении видеть кнопки*/
