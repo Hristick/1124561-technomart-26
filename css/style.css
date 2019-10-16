@@ -1,40 +1,257 @@
+html {
+    box-sizing: border-box;
 
-.logo {
-  background-color: #ff3333;
+}
 
+*, *::before, *::after {
+    box-sizing: inherit;
+
+}
+
+body {
+  font-family: "cuprum";
+  font-size:  16px;
+
+}
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+  height: 42px;
+  background-color: #293449;
+ 
+
+
+}
+
+.search::before {
+content: "";
+background-image: url(icon-search.svg) no-repeat 50% 50%;
+
+}
+.header-top a {
+  color: white;
 }
 
 h1 {
-    
-    font-size: 16px;
-    font-family: "Cuprum";
-    color: rgb(238, 54, 67);
-    font-style: italic;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color: rgb(238, 54, 67);
+  font-style: italic;
+ 
+
+}
+
+
+
+
+
+.logo {
+  display:flex;
+  width: 220px;
+  height: 51px;
+  box-shadow: 0px 5px 0 0 #b52933;
+  background-color: #ff3333;
+  margin-left: 130px;
+  justify-content: center;
+}
+ .logo:hover {
+   background-color: #ca2c37; 
+}
+
+.logo:active {
+   background-color: #ba2732;
+}
+
+.bookmarks::before {
+  content: "";
+  background-image: url(icon-bookmark.svg) no-repeat;
+  background-position: 0 0;
+}
+
+.order {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+  margin-right: 130px;
+ 
+}
+
+
+
+.top-midel {
+  display: flex;
+  width: auto; height: 160px;
+  justify-content:space-between;
+  margin-left: 130px; margin-right: 130px;
+}
+
+.top-midel h1 {
+  display: flex;
+  width: 300px;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  background-color: #32425c;
+  list-style-type: none;
+  width: 940px;
+  /**padding-top: 20px;
+  padding-bottom: 20px;**/
+  margin:0 auto; 
+
+}
+
+ .header-nav li {
+  align-items: stretch;
+  height:60px;
+ 
+}
+ .header-nav a {
+   color: white;
+}
+
+.header-nav li:hover {
+  background-color: #293449;
+}
+
+.header-nav li:active {
+  background-color: #1d2739;
 }
 
 .materials {
-  background-color: #ffbf47;
-  position: absolute;
+  display: flex;
+  width: 960px;
+  height: 410px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.materials li {
+  display: flex;
   width: 300px;
   height: 123px;
-  z-index: 189;
+  border: 2px black;
+}
+
+.slider {
+  display: flex;
+  width: 620px;
+  height: 265px;
+  float: left;
+}
+
+
+/*-- Блок популярные товары -*/
+.goods {
+  display: flex;
+  width: 945px;
+ 
+}
+
+.all-goods {
+  display:flex;
+  align-content:center;
+  justify-content:space-around;
+  text-transform:uppercase;
+  
+}
+.all-goods h2 {
+  display: flex;
+  color: #32425c;
 
 }
-/* Спрятал кнопки*/
-.hidden-button {
-  display: none;
+
+.all-goods a {
+  display: flex;
+  width: 253px;
+  height: 38px;
+  justify-content: center;
+  align-items:center;
+  background-color: #ee3643;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
+ .goods-items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  
+}
+
+.goods ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 220px;
+ 
+}
+.goods ul img {
+  display: flex;
+  align-self: flex-start;
+}
+
+
+
+.manufacturers {
+  display: flex;
+  width: 960px;
+  justify-content: center;
+}
+
+.all-brends {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+
+.brand-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+
+  
+
+
+
+}
+ .brand:hover {
+  box-shadow: #293449;
+}
+
+
+
+
+.hidden-button {
+  visibility:hidden;
+}
+
 /*Картинке дал класс item и хочу при наведении видеть кнопки*/
 .item:hover  {
-display: block;
+display:block;
+}
+
+.popup {
+  display: none;
+
 }
 
 
-}
-
-.new {
-  float:  right;
-}
 
 .paint {
   margin: -20px 2px 0px 110px;
