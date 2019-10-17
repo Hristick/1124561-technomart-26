@@ -142,7 +142,7 @@ h1 {
    background-color: #518534;
 }
 
-
+/*Блок навигации*/
 
 .top-midel {
   display: flex;
@@ -253,7 +253,6 @@ h1 {
   
 }
 .all-goods h2 {
-  display: flex;
   color: #32425c;
 
 }
@@ -269,24 +268,23 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
 }
- .goods-items {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+
+.goods-items {
+ 
   
+  }
+.goods-items li{
+  border: 1px solid  #f9f5f0;
+  justify-content: space-between;
+  width: 220px;
 }
 
 .goods ul {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  width: 220px;
- 
+  margin-bottom: 20px;
 }
-.goods ul img {
-  display: flex;
-  align-self: flex-start;
-}
+
 
 
 
@@ -294,10 +292,25 @@ h1 {
   
 }
 
-.all-brends {
+.all-brands {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  text-transform:uppercase;
+  background-color: #f9f5f0;
+ 
+ 
+}
+.all-brands a {
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
+  width: 253px;
+  height: 38px;
+  justify-content: center;
+  align-items:center;
+  background-color: #ee3643;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 
@@ -307,14 +320,18 @@ h1 {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-between;
+  
 }
-
+.brand-list li {
+  width: 220px;
+  border: 1px solid #f9f5f0;
+}
 
   
 
 
 
-}
+
  .brand:hover {
   box-shadow: #293449;
 }
